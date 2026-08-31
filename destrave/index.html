@@ -110,6 +110,70 @@
             background: linear-gradient(135deg, #FFF1F3 0%, #FFFBF7 100%);
         }
 
+        .wpp-card {
+            background: #0b141a;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+        }
+        .wpp-header {
+            background: #1f2c34;
+            padding: 10px 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .wpp-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #8F0D3A, #FF3360);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .wpp-name {
+            color: #e9edef;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .wpp-body {
+            padding: 8px 12px 12px;
+        }
+        .wpp-bubble {
+            background: #202c33;
+            border-radius: 0 8px 8px 8px;
+            padding: 8px 12px;
+            margin-bottom: 6px;
+            max-width: 92%;
+            position: relative;
+        }
+        .wpp-bubble.sent {
+            background: #005c4b;
+            border-radius: 8px 0 8px 8px;
+            margin-left: auto;
+        }
+        .wpp-bubble p {
+            color: #e9edef;
+            font-size: 13px;
+            line-height: 1.45;
+        }
+        .wpp-time {
+            color: #8696a0;
+            font-size: 10px;
+            text-align: right;
+            margin-top: 2px;
+        }
+        .wpp-star {
+            color: #f5c842;
+            font-size: 10px;
+            margin-right: 4px;
+        }
+
         .guarantee-seal {
             background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
             box-shadow: 0 0 0 6px #fff, 0 0 0 8px #FFD700, 0 8px 30px rgba(255, 165, 0, 0.3);
@@ -529,14 +593,10 @@
                 </div>
 
                 <div class="flex flex-col md:flex-row items-center gap-10 md:gap-14">
-                    <!-- Photo placeholder -->
-                    <div class="flex-shrink-0">
-                        <div class="w-56 h-56 md:w-72 md:h-72 rounded-2xl bg-gradient-to-br from-rose-200 to-rose-100 flex items-center justify-center shadow-xl border-4 border-white relative overflow-hidden">
-                            <div class="text-center">
-                                <i class="fas fa-user text-6xl text-rose-300 mb-2"></i>
-                                <p class="text-rose-400 text-sm font-medium">Foto de Mirna Lacerda</p>
-                            </div>
-                            <!-- Badge -->
+                    <!-- Foto Mirna Lacerda -->
+                    <div class="flex-shrink-0 relative">
+                        <div class="w-56 h-56 md:w-72 md:h-72 rounded-2xl shadow-xl border-4 border-white overflow-hidden relative">
+                            <img id="foto-mirna" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='288' height='288'%3E%3Crect fill='%23fce7f3' width='288' height='288'/%3E%3Ctext x='144' y='144' text-anchor='middle' dominant-baseline='middle' font-family='sans-serif' font-size='14' fill='%23f472b6'%3EFoto Mirna%3C/text%3E%3C/svg%3E" alt="Mirna Lacerda - Especialista em Ginástica Íntima" class="w-full h-full object-cover">
                             <div class="absolute bottom-3 right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold shadow-md">
                                 <i class="fas fa-trophy mr-1"></i> #1 em 2021
                             </div>
@@ -589,32 +649,97 @@
                 <div class="w-20 h-1 bg-rose-400 mx-auto rounded-full"></div>
             </div>
 
-            <!-- Placeholder grid for screenshots/testimonials -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                <div class="bg-blush-100 rounded-xl aspect-[3/4] flex items-center justify-center border-2 border-dashed border-rose-200 hover:border-rose-400 transition-colors">
-                    <div class="text-center p-4">
-                        <i class="fas fa-image text-3xl text-rose-300 mb-2"></i>
-                        <p class="text-rose-400 text-xs font-medium">Print de Depoimento</p>
+            <!-- Prints reais de depoimentos no estilo WhatsApp -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+
+                <!-- Depoimento Maria Aparecida -->
+                <div class="wpp-card">
+                    <div class="wpp-header">
+                        <div class="wpp-avatar">MA</div>
+                        <div class="wpp-name">Maria Aparecida</div>
+                    </div>
+                    <div class="wpp-body">
+                        <div class="wpp-bubble">
+                            <p>Boa tarde Maravilhosa! Olha já dei uma olhada no livro!! A Capa é divina, o sumário muito bem colocado, a introdução é perfeita, dei uma olhada no geral, é muito conteúdo, a gente fica perdida!! Estou lendo aos poucos... Tô amando, muito bem trabalhados!! Só a Prô mesmo pra nos ajudar!! Parabéns pelo trabalho, carinhoso com nós mulheres!! Isto é ser uma mulher de verdade!! Uma Leôa!!</p>
+                            <div class="wpp-time"><span class="wpp-star"><i class="fas fa-star"></i></span> 4:36 da tarde</div>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-blush-100 rounded-xl aspect-[3/4] flex items-center justify-center border-2 border-dashed border-rose-200 hover:border-rose-400 transition-colors">
-                    <div class="text-center p-4">
-                        <i class="fas fa-image text-3xl text-rose-300 mb-2"></i>
-                        <p class="text-rose-400 text-xs font-medium">Print de Depoimento</p>
+
+                <!-- Depoimento Lucy -->
+                <div class="wpp-card">
+                    <div class="wpp-header">
+                        <div class="wpp-avatar">LC</div>
+                        <div class="wpp-name">Lucy</div>
+                    </div>
+                    <div class="wpp-body">
+                        <div class="wpp-bubble">
+                            <p>Como tem me ajudado este curso. Minha alto estima, posicionamento, coragem, conhecendo o meu corpo. Cuidando dele com todo carinho. Quero melhorar muito mais. Gratidão Prof. Mirna.</p>
+                            <div class="wpp-time"><span class="wpp-star"><i class="fas fa-star"></i></span> 7:18 da manhã</div>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-blush-100 rounded-xl aspect-[3/4] flex items-center justify-center border-2 border-dashed border-rose-200 hover:border-rose-400 transition-colors">
-                    <div class="text-center p-4">
-                        <i class="fas fa-image text-3xl text-rose-300 mb-2"></i>
-                        <p class="text-rose-400 text-xs font-medium">Print de Depoimento</p>
+
+                <!-- Depoimento Cida Sandes -->
+                <div class="wpp-card">
+                    <div class="wpp-header">
+                        <div class="wpp-avatar">CS</div>
+                        <div class="wpp-name">Cida Sandes</div>
+                    </div>
+                    <div class="wpp-body">
+                        <div class="wpp-bubble">
+                            <p>Boa noite Cris boa noite pro eu tô amando amando o livro tá maravilhoso e não canso de ler já eu volto lê de novo nossa tá muito bom eu estou adorando tô lendo demais cada uma frase mais interessante que a outra muito muito muito mesmo tá muito demais</p>
+                            <div class="wpp-time"><span class="wpp-star"><i class="fas fa-star"></i></span> 6:18 da tarde</div>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-blush-100 rounded-xl aspect-[3/4] flex items-center justify-center border-2 border-dashed border-rose-200 hover:border-rose-400 transition-colors">
-                    <div class="text-center p-4">
-                        <i class="fas fa-image text-3xl text-rose-300 mb-2"></i>
-                        <p class="text-rose-400 text-xs font-medium">Print de Depoimento</p>
+
+                <!-- Depoimento Katia -->
+                <div class="wpp-card">
+                    <div class="wpp-header">
+                        <div class="wpp-avatar">KT</div>
+                        <div class="wpp-name">Katia</div>
+                    </div>
+                    <div class="wpp-body">
+                        <div class="wpp-bubble">
+                            <p>Olha a nova resposta Cris, estas frases estão deixando ele ainda mais apaixonado!!!</p>
+                            <div class="wpp-time"><span class="wpp-star"><i class="fas fa-star"></i></span> 9:08 da manhã</div>
+                        </div>
+                        <div class="wpp-bubble">
+                            <p>E as frases continuam fazendo efeito! Rsrs</p>
+                            <div class="wpp-time">3:59 da tarde</div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Depoimento Darcy -->
+                <div class="wpp-card">
+                    <div class="wpp-header">
+                        <div class="wpp-avatar">DC</div>
+                        <div class="wpp-name">Darcy</div>
+                    </div>
+                    <div class="wpp-body">
+                        <div class="wpp-bubble">
+                            <p>Já li um bocado de frase. Já mandei uma frase por meu. Peguete hoje de manhã. 😍 kk</p>
+                            <div class="wpp-time"><span class="wpp-star"><i class="fas fa-star"></i></span> 6:23 da tarde</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento Maria Delouza -->
+                <div class="wpp-card">
+                    <div class="wpp-header">
+                        <div class="wpp-avatar">MD</div>
+                        <div class="wpp-name">Maria Delouza</div>
+                    </div>
+                    <div class="wpp-body">
+                        <div class="wpp-bubble">
+                            <p>Meninas eu também estou adorando esse livro</p>
+                            <div class="wpp-time">6:20 da tarde</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
