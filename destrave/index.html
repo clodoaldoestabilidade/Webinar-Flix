@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Destrave Seu Prazer | Mirna Lacerda</title>
+    <meta name="description" content="Reconecte-se com o seu prazer e destrave a lubrificação natural do seu corpo. Desafio ao vivo com Mirna Lacerda por apenas R$ 47.">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rose: {
+                            50: '#FFF1F3',
+                            100: '#FFE0E6',
+                            200: '#FFC7D2',
+                            300: '#FF9DB0',
+                            400: '#FF6685',
+                            500: '#FF3360',
+                            600: '#ED1150',
+                            700: '#C80843',
+                            800: '#A80A3E',
+                            900: '#8F0D3A',
+                        },
+                        blush: {
+                            50: '#FDF8F6',
+                            100: '#FAF0EC',
+                            200: '#F5E1D8',
+                        },
+                        wine: {
+                            700: '#6B1A3A',
+                            800: '#4E1129',
+                            900: '#3A0C1E',
+                        },
+                        coral: {
+                            500: '#FF6B4A',
+                            600: '#E8553A',
+                        },
+                        warm: {
+                            50: '#FFFBF7',
+                            100: '#FFF5ED',
+                            200: '#FEEBD6',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .btn-cta {
+            background: linear-gradient(135deg, #FF6B4A 0%, #FF3360 50%, #ED1150 100%);
+            background-size: 200% 200%;
+            animation: shimmer 3s ease infinite;
+            color: #fff;
+            font-weight: 700;
+            box-shadow: 0 8px 30px rgba(255, 51, 96, 0.4);
+            transition: all 0.3s ease;
+        }
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(255, 51, 96, 0.55);
+        }
+        .btn-cta:active {
+            transform: translateY(-1px);
+        }
+
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.3s ease;
+        }
+        .faq-content.open {
+            max-height: 600px;
+        }
+        .faq-chevron {
+            transition: transform 0.3s ease;
+        }
+        .faq-chevron.open {
+            transform: rotate(180deg);
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, #FFF1F3 0%, #FFFBF7 100%);
+        }
+
+        .guarantee-seal {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
+            box-shadow: 0 0 0 6px #fff, 0 0 0 8px #FFD700, 0 8px 30px rgba(255, 165, 0, 0.3);
+        }
+
+        .comparison-highlight {
+            background: linear-gradient(135deg, rgba(255, 51, 96, 0.05) 0%, rgba(255, 107, 74, 0.05) 100%);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(165deg, #3A0C1E 0%, #4E1129 30%, #6B1A3A 60%, #8F0D3A 100%);
+        }
+
+        .text-gradient-rose {
+            background: linear-gradient(135deg, #FF9DB0, #FF6685, #FF3360);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .vsl-placeholder {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white overflow-x-hidden antialiased">
+
+    <!-- ============================================ -->
+    <!-- BARRA DE AVISO STICKY (URGÊNCIA)             -->
+    <!-- ============================================ -->
+    <div class="sticky top-0 z-50 bg-gradient-to-r from-wine-900 via-rose-700 to-wine-900 text-white py-2.5 px-4 text-center shadow-lg">
+        <div class="container mx-auto flex items-center justify-center gap-2 text-sm md:text-base">
+            <i class="fas fa-fire text-yellow-400 animate-pulse"></i>
+            <p class="font-semibold tracking-wide">
+                <span class="hidden sm:inline">OFERTA RELÂMPAGO:</span>
+                De <span class="line-through opacity-70">R$ 197</span> por apenas
+                <span class="text-yellow-300 font-extrabold text-lg">R$ 47</span>
+                — Vagas limitadas para a aula ao vivo!
+            </p>
+            <i class="fas fa-fire text-yellow-400 animate-pulse"></i>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION                                 -->
+    <!-- ============================================ -->
+    <section class="hero-gradient relative min-h-screen flex items-center overflow-hidden">
+        <!-- Decorative circles -->
+        <div class="absolute top-20 right-0 w-72 h-72 bg-rose-500 rounded-full mix-blend-soft-light filter blur-3xl opacity-20"></div>
+        <div class="absolute bottom-10 left-0 w-96 h-96 bg-rose-300 rounded-full mix-blend-soft-light filter blur-3xl opacity-10"></div>
+
+        <div class="container mx-auto px-5 md:px-8 py-16 md:py-24 relative z-10">
+            <div class="max-w-5xl mx-auto text-center">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-rose-400/30 bg-rose-500/10 text-rose-200 text-sm font-medium tracking-wider uppercase mb-8">
+                    <span class="w-2 h-2 bg-rose-400 rounded-full" style="animation: pulse-soft 2s infinite;"></span>
+                    Desafio ao Vivo — Vagas Limitadas
+                </div>
+
+                <!-- Headline -->
+                <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    Reconecte-se com o seu prazer e
+                    <span class="text-gradient-rose block sm:inline"> destrave a lubrificação natural</span>
+                    do seu corpo
+                </h1>
+
+                <!-- Sub-headline -->
+                <p class="text-lg md:text-xl text-rose-100/80 font-light leading-relaxed max-w-3xl mx-auto mb-10">
+                    Imagine-se livre das dores e do medo, sentindo sua região íntima pulsar com uma sensibilidade nova.
+                    É o fim do deserto íntimo para dar lugar a uma conexão profunda onde você se sente
+                    <strong class="text-white font-semibold">vibrante, desejada e plenamente realizada.</strong>
+                </p>
+
+                <!-- VSL Placeholder -->
+                <div class="w-full max-w-4xl mx-auto mb-10">
+                    <div class="vsl-placeholder rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                        <div class="relative w-full" style="padding-bottom:56.25%;">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-white/60">
+                                <div class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center mb-4 border border-white/20 cursor-pointer hover:bg-white/20 transition-colors">
+                                    <i class="fas fa-play text-3xl md:text-4xl text-white ml-1"></i>
+                                </div>
+                                <p class="text-sm md:text-base font-medium tracking-wide">Assista ao vídeo e descubra o método</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="#oferta" class="btn-cta inline-flex items-center gap-3 px-10 md:px-14 py-5 md:py-6 rounded-xl text-base md:text-lg uppercase tracking-wider">
+                    <i class="fas fa-lock-open"></i>
+                    Quero me inscrever no desafio agora
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <!-- Micro benefits -->
+                <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-3xl mx-auto">
+                    <div class="flex items-center gap-2 text-rose-200/70 text-sm">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span>Acesso imediato às aulas gravadas</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-rose-200/70 text-sm">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span>Aula ao vivo exclusiva com Mirna Lacerda</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-rose-200/70 text-sm">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span>Mais barato que uma pizza (apenas R$ 47)</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-rose-200/70 text-sm">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span>Satisfação garantida ou seu dinheiro de volta</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PROVA SOCIAL — DEPOIMENTOS                   -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-20 bg-blush-50">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="text-center mb-12">
+                <p class="text-rose-500 font-semibold uppercase tracking-widest text-sm mb-3">Resultados Reais</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-wine-800">O que elas estão dizendo</h2>
+                <div class="w-20 h-1 bg-rose-400 mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Depoimento 1 -->
+                <div class="testimonial-card rounded-2xl p-8 border border-rose-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-5 italic text-lg">
+                        "Minha vida mudou depois que entendi como relaxar meu corpo. O prazer voltou a ser real!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-rose-200 flex items-center justify-center text-rose-600 font-bold text-lg">A</div>
+                        <div>
+                            <p class="font-semibold text-gray-800 text-sm">Depoimento Real</p>
+                            <p class="text-xs text-gray-500">Aluna verificada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="testimonial-card rounded-2xl p-8 border border-rose-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-5 italic text-lg">
+                        "Eu achava que a menopausa era o fim, mas a Mirna me mostrou que é apenas um novo começo."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-rose-200 flex items-center justify-center text-rose-600 font-bold text-lg">M</div>
+                        <div>
+                            <p class="font-semibold text-gray-800 text-sm">Depoimento Real</p>
+                            <p class="text-xs text-gray-500">Aluna verificada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- O SEGREDO QUE NINGUÉM TE CONTA               -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-wine-800 mb-4">
+                        O segredo que ninguém te conta sobre o seu corpo
+                    </h2>
+                    <div class="w-20 h-1 bg-rose-400 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <!-- Ilustração metafórica -->
+                    <div class="order-2 md:order-1">
+                        <div class="bg-gradient-to-br from-rose-50 to-warm-100 rounded-2xl p-8 md:p-10 border border-rose-100">
+                            <div class="text-center mb-6">
+                                <div class="inline-flex items-center justify-center w-20 h-20 bg-rose-100 rounded-full mb-4">
+                                    <i class="fas fa-droplet text-3xl text-rose-500"></i>
+                                </div>
+                                <p class="font-serif text-xl font-bold text-wine-800">A Metáfora da Esponja</p>
+                            </div>
+                            <div class="space-y-3 text-sm">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-red-100 flex-shrink-0 flex items-center justify-center mt-0.5">
+                                        <i class="fas fa-times text-red-500 text-xs"></i>
+                                    </div>
+                                    <p class="text-gray-600"><strong class="text-gray-800">Pelve travada:</strong> Sem circulação sanguínea, sem lubrificação, nervos adormecidos.</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mt-0.5">
+                                        <i class="fas fa-check text-green-500 text-xs"></i>
+                                    </div>
+                                    <p class="text-gray-600"><strong class="text-gray-800">Pelve destravada:</strong> Calor, vascularização e lubrificação natural restaurados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="order-1 md:order-2 space-y-6">
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Pense na sua região pélvica como uma esponja. O estresse e a rotina travam essa "esponja", deixando sua pelve dura como uma pedra.
+                        </p>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Onde existe tensão, o sangue não circula. <strong class="text-wine-800">Sem sangue, não há lubrificação</strong> e os nervos "adormecem".
+                        </p>
+                        <div class="bg-rose-50 border-l-4 border-rose-400 rounded-r-lg p-5">
+                            <p class="text-gray-700 leading-relaxed">
+                                Lubrificantes de farmácia são apenas <strong>muletas que molham por fora</strong>. O meu método ensina você a destravar por dentro, devolvendo o calor, a vascularização e a lubrificação que seu corpo já sabe produzir, mas esqueceu como fazer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- OS 3 PILARES DO DESTRAVAMENTO                -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-wine-900 to-wine-800 text-white relative overflow-hidden">
+        <!-- Decorative -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-rose-400 to-transparent"></div>
+        <div class="absolute -bottom-20 -right-20 w-72 h-72 bg-rose-500 rounded-full opacity-10 blur-3xl"></div>
+
+        <div class="container mx-auto px-5 md:px-8 relative z-10">
+            <div class="text-center mb-14">
+                <p class="text-rose-300 font-semibold uppercase tracking-widest text-sm mb-3">O Método</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold">Os 3 pilares do destravamento</h2>
+                <div class="w-20 h-1 bg-rose-400 mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Pilar 1 -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-rose-400/40 transition-colors group">
+                    <div class="w-16 h-16 bg-rose-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-rose-500/30 transition-colors">
+                        <span class="font-serif text-3xl font-bold text-rose-300">1</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-4">Identificação do Problema</h3>
+                    <p class="text-rose-100/70 leading-relaxed">
+                        Descubra os bloqueios invisíveis que transformam sua pelve em uma "pedra", impedindo a circulação de sangue e travando sua resposta natural ao prazer.
+                    </p>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-rose-400/40 transition-colors group">
+                    <div class="w-16 h-16 bg-rose-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-rose-500/30 transition-colors">
+                        <span class="font-serif text-3xl font-bold text-rose-300">2</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-4">Exercícios de Reativação</h3>
+                    <p class="text-rose-100/70 leading-relaxed">
+                        Aplique técnicas de vascularização e relaxamento profundo para despertar nervos adormecidos e reativar suas glândulas íntimas, devolvendo o calor natural.
+                    </p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-rose-400/40 transition-colors group">
+                    <div class="w-16 h-16 bg-rose-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-rose-500/30 transition-colors">
+                        <span class="font-serif text-3xl font-bold text-rose-300">3</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-4">Manutenção e Ritual de Prazer</h3>
+                    <p class="text-rose-100/70 leading-relaxed">
+                        Consolide uma rotina de conexão que liberta você da dependência de lubrificantes sintéticos, garantindo um corpo sempre sensível e pronto para sentir prazer real.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ESTE DESAFIO É PARA VOCÊ QUE…                -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-24 bg-blush-50">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <!-- Para quem é -->
+                    <div>
+                        <h2 class="font-serif text-3xl md:text-4xl font-bold text-wine-800 mb-8">
+                            Este desafio é para você que…
+                        </h2>
+                        <ul class="space-y-5">
+                            <li class="flex items-start gap-4">
+                                <div class="w-7 h-7 rounded-full bg-rose-500 flex-shrink-0 flex items-center justify-center mt-0.5">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Sente ressecamento e dores durante a intimidade;</p>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-7 h-7 rounded-full bg-rose-500 flex-shrink-0 flex items-center justify-center mt-0.5">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Não consegue mais chegar ao orgasmo ou sentir prazer;</p>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-7 h-7 rounded-full bg-rose-500 flex-shrink-0 flex items-center justify-center mt-0.5">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Sofre com flacidez pélvica ou escapes de urina (incontinência);</p>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-7 h-7 rounded-full bg-rose-500 flex-shrink-0 flex items-center justify-center mt-0.5">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Sente que o relacionamento está esfriando por falta de conexão;</p>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-7 h-7 rounded-full bg-rose-500 flex-shrink-0 flex items-center justify-center mt-0.5">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Está na menopausa e acha que seu corpo "parou de funcionar".</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Perfil ideal -->
+                    <div class="bg-white rounded-2xl p-8 md:p-10 shadow-lg border border-rose-100">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-heart text-rose-500 text-xl"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-wine-800">Perfil Ideal para o Método</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Este método foi desenhado para <strong class="text-gray-800">mulheres entre 30 e 65 anos</strong>, casadas ou solteiras, que enfrentam uma rotina exaustiva e precisam de uma solução prática.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed text-lg mt-4">
+                            É perfeito para quem já tentou de tudo, está cética, mas busca um caminho <strong class="text-rose-600">100% natural e definitivo.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- RESULTADOS DO DESAFIO                        -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-wine-800 mb-4">
+                        Ao concluir este desafio, você será capaz de:
+                    </h2>
+                    <div class="w-20 h-1 bg-rose-400 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-warm-50 border border-warm-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-droplet text-green-600 text-lg"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Eliminar o ressecamento íntimo através da lubrificação natural</p>
+                    </div>
+
+                    <div class="bg-warm-50 border border-warm-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-heart-pulse text-green-600 text-lg"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Acabar com as dores e o desconforto no ato da intimidade</p>
+                    </div>
+
+                    <div class="bg-warm-50 border border-warm-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-shield-halved text-green-600 text-lg"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Fortalecer a musculatura pélvica, eliminando escapes e flatos</p>
+                    </div>
+
+                    <div class="bg-warm-50 border border-warm-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-face-smile-beam text-green-600 text-lg"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Restaurar sua autoconfiança e a felicidade na vida a dois</p>
+                    </div>
+
+                    <div class="bg-warm-50 border border-warm-200 rounded-xl p-6 hover:shadow-md transition-shadow sm:col-span-2 lg:col-span-1">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-bolt text-green-600 text-lg"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Sentir seu corpo pulsante e sensível novamente em apenas 4 semanas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- QUEM VAI TE GUIAR                            -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-24 bg-blush-50">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-rose-500 font-semibold uppercase tracking-widest text-sm mb-3">Sua Mentora</p>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-wine-800">Quem vai te guiar nesta jornada</h2>
+                    <div class="w-20 h-1 bg-rose-400 mx-auto rounded-full mt-4"></div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-10 md:gap-14">
+                    <!-- Photo placeholder -->
+                    <div class="flex-shrink-0">
+                        <div class="w-56 h-56 md:w-72 md:h-72 rounded-2xl bg-gradient-to-br from-rose-200 to-rose-100 flex items-center justify-center shadow-xl border-4 border-white relative overflow-hidden">
+                            <div class="text-center">
+                                <i class="fas fa-user text-6xl text-rose-300 mb-2"></i>
+                                <p class="text-rose-400 text-sm font-medium">Foto de Mirna Lacerda</p>
+                            </div>
+                            <!-- Badge -->
+                            <div class="absolute bottom-3 right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold shadow-md">
+                                <i class="fas fa-trophy mr-1"></i> #1 em 2021
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bio -->
+                    <div class="text-center md:text-left">
+                        <h3 class="font-serif text-2xl md:text-3xl font-bold text-wine-800 mb-4">Mirna Lacerda</h3>
+                        <div class="flex flex-wrap gap-2 justify-center md:justify-start mb-5">
+                            <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-xs font-semibold">Palestrante</span>
+                            <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-xs font-semibold">Pedagoga</span>
+                            <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-xs font-semibold">Mestre em Ginástica Íntima</span>
+                            <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-xs font-semibold">Sexóloga</span>
+                        </div>
+                        <p class="text-gray-600 text-lg leading-relaxed mb-4">
+                            Com quase <strong class="text-gray-800">100 mil seguidores</strong>, Mirna Lacerda dedicou sua vida a treinar mulheres após vencer seus próprios problemas de incontinência urinária.
+                        </p>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Foi eleita a <strong class="text-rose-600">maior influenciadora do mercado íntimo em 2021</strong> e hoje ajuda milhares de alunas a recuperarem sua dignidade e prazer através do ambiente online.
+                        </p>
+                        <!-- Social proof numbers -->
+                        <div class="flex gap-8 mt-6 justify-center md:justify-start">
+                            <div>
+                                <p class="font-bold text-2xl text-wine-800">100K+</p>
+                                <p class="text-gray-500 text-sm">Seguidoras</p>
+                            </div>
+                            <div>
+                                <p class="font-bold text-2xl text-wine-800">1000+</p>
+                                <p class="text-gray-500 text-sm">Alunas</p>
+                            </div>
+                            <div>
+                                <p class="font-bold text-2xl text-wine-800">#1</p>
+                                <p class="text-gray-500 text-sm">Influenciadora 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- MAIS RESULTADOS REAIS                        -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-wine-800 mb-4">Mais resultados reais</h2>
+                <div class="w-20 h-1 bg-rose-400 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Placeholder grid for screenshots/testimonials -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="bg-blush-100 rounded-xl aspect-[3/4] flex items-center justify-center border-2 border-dashed border-rose-200 hover:border-rose-400 transition-colors">
+                    <div class="text-center p-4">
+                        <i class="fas fa-image text-3xl text-rose-300 mb-2"></i>
+                        <p class="text-rose-400 text-xs font-medium">Print de Depoimento</p>
+                    </div>
+                </div>
+                <div class="bg-blush-100 rounded-xl aspect-[3/4] flex items-center justify-center border-2 border-dashed border-rose-200 hover:border-rose-400 transition-colors">
+                    <div class="text-center p-4">
+                        <i class="fas fa-image text-3xl text-rose-300 mb-2"></i>
+                        <p class="text-rose-400 text-xs font-medium">Print de Depoimento</p>
+                    </div>
+                </div>
+                <div class="bg-blush-100 rounded-xl aspect-[3/4] flex items-center justify-center border-2 border-dashed border-rose-200 hover:border-rose-400 transition-colors">
+                    <div class="text-center p-4">
+                        <i class="fas fa-image text-3xl text-rose-300 mb-2"></i>
+                        <p class="text-rose-400 text-xs font-medium">Print de Depoimento</p>
+                    </div>
+                </div>
+                <div class="bg-blush-100 rounded-xl aspect-[3/4] flex items-center justify-center border-2 border-dashed border-rose-200 hover:border-rose-400 transition-colors">
+                    <div class="text-center p-4">
+                        <i class="fas fa-image text-3xl text-rose-300 mb-2"></i>
+                        <p class="text-rose-400 text-xs font-medium">Print de Depoimento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- O QUE VOCÊ RECEBE                            -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-wine-900 to-wine-800 text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-rose-400 to-transparent"></div>
+
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="text-center mb-14">
+                <p class="text-rose-300 font-semibold uppercase tracking-widest text-sm mb-3">Tudo Incluído</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold">O que você recebe ao entrar hoje</h2>
+                <div class="w-20 h-1 bg-rose-400 mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- Item 1 -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-7 hover:border-rose-400/40 transition-all hover:transform hover:-translate-y-1">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-rose-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-video text-rose-300 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white">Aula Especial ao Vivo</h3>
+                    </div>
+                    <p class="text-rose-100/70 leading-relaxed">
+                        Momento "olho no olho" para tirar dúvidas e praticar.
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-7 hover:border-rose-400/40 transition-all hover:transform hover:-translate-y-1">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-rose-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-play-circle text-rose-300 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white">Videoaulas de Reativação</h3>
+                    </div>
+                    <p class="text-rose-100/70 leading-relaxed">
+                        Passo a passo gravado para assistir quando quiser.
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-7 hover:border-rose-400/40 transition-all hover:transform hover:-translate-y-1">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-rose-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-file-pdf text-rose-300 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white">Material de Apoio em PDF</h3>
+                    </div>
+                    <p class="text-rose-100/70 leading-relaxed">
+                        Guia prático dos exercícios e rituais.
+                    </p>
+                </div>
+
+                <!-- Item 4 — Bônus -->
+                <div class="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 backdrop-blur-sm border border-yellow-400/30 rounded-2xl p-7 hover:border-yellow-400/50 transition-all hover:transform hover:-translate-y-1 relative">
+                    <div class="absolute top-3 right-3 bg-yellow-400 text-yellow-900 px-2.5 py-0.5 rounded-full text-xs font-bold">
+                        BÔNUS
+                    </div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-gift text-yellow-300 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white">Bônus Exclusivo 3S</h3>
+                    </div>
+                    <p class="text-rose-100/70 leading-relaxed">
+                        Um acelerador de resultados para sua nova fase.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mockup placeholder -->
+            <div class="mt-14 flex justify-center">
+                <div class="flex items-end gap-4 md:gap-8">
+                    <!-- Tablet mockup -->
+                    <div class="w-40 h-56 md:w-52 md:h-72 bg-gray-800 rounded-xl border-2 border-gray-600 flex items-center justify-center shadow-2xl">
+                        <div class="text-center">
+                            <i class="fas fa-tablet-screen-button text-4xl text-gray-600 mb-2"></i>
+                            <p class="text-gray-500 text-xs">Mockup Tablet</p>
+                        </div>
+                    </div>
+                    <!-- Phone mockup -->
+                    <div class="w-24 h-44 md:w-32 md:h-56 bg-gray-800 rounded-2xl border-2 border-gray-600 flex items-center justify-center shadow-2xl">
+                        <div class="text-center">
+                            <i class="fas fa-mobile-screen text-3xl text-gray-600 mb-1"></i>
+                            <p class="text-gray-500 text-[10px]">Mockup Celular</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- TABELA COMPARATIVA                           -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-wine-800 mb-4">
+                    Por que este método é diferente?
+                </h2>
+                <div class="w-20 h-1 bg-rose-400 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="p-4 md:p-5 text-sm md:text-base font-bold text-gray-500 uppercase tracking-wider border-b-2 border-gray-100">Característica</th>
+                            <th class="p-4 md:p-5 text-sm md:text-base font-bold text-gray-400 uppercase tracking-wider border-b-2 border-gray-100">Métodos Comuns / Farmácia</th>
+                            <th class="p-4 md:p-5 text-sm md:text-base font-bold text-rose-600 uppercase tracking-wider border-b-2 border-rose-200 bg-rose-50 rounded-t-xl">Desafio Mirna Lacerda</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100">
+                            <td class="p-4 md:p-5 font-semibold text-gray-800">Solução</td>
+                            <td class="p-4 md:p-5 text-gray-500">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-times-circle text-red-400"></i>
+                                    Química e superficial (muleta)
+                                </div>
+                            </td>
+                            <td class="p-4 md:p-5 bg-rose-50/50 text-gray-700">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <strong>Natural e de dentro para fora</strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="p-4 md:p-5 font-semibold text-gray-800">Foco</td>
+                            <td class="p-4 md:p-5 text-gray-500">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-times-circle text-red-400"></i>
+                                    Apenas contração (pode piorar)
+                                </div>
+                            </td>
+                            <td class="p-4 md:p-5 bg-rose-50/50 text-gray-700">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <strong>Relaxamento e Vascularização</strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="p-4 md:p-5 font-semibold text-gray-800">Acompanhamento</td>
+                            <td class="p-4 md:p-5 text-gray-500">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-times-circle text-red-400"></i>
+                                    Você fica sozinha com o produto
+                                </div>
+                            </td>
+                            <td class="p-4 md:p-5 bg-rose-50/50 text-gray-700">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <strong>Aula ao vivo e suporte direto</strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 md:p-5 font-semibold text-gray-800">Resultado</td>
+                            <td class="p-4 md:p-5 text-gray-500">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-times-circle text-red-400"></i>
+                                    Momentâneo e artificial
+                                </div>
+                            </td>
+                            <td class="p-4 md:p-5 bg-rose-50/50 text-gray-700 rounded-b-xl">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <strong>Duradouro e biológico</strong>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- OFERTA                                       -->
+    <!-- ============================================ -->
+    <section id="oferta" class="py-16 md:py-24 bg-gradient-to-b from-blush-50 to-rose-50 relative">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="text-center mb-10">
+                <p class="text-rose-500 font-semibold uppercase tracking-widest text-sm mb-3">Oferta Exclusiva e Limitada</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-wine-800 mb-4">
+                    Recupere sua sensibilidade e acabe com o deserto íntimo
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Por um valor menor que um lanche rápido.
+                </p>
+            </div>
+
+            <div class="max-w-lg mx-auto">
+                <div class="bg-white rounded-3xl shadow-2xl border border-rose-100 overflow-hidden">
+                    <!-- Header -->
+                    <div class="bg-gradient-to-r from-wine-800 to-wine-900 text-white text-center py-6 px-6">
+                        <p class="text-rose-200 text-sm font-medium uppercase tracking-wider mb-1">Acesso Completo ao Desafio</p>
+                        <div class="flex items-center justify-center gap-3">
+                            <span class="text-rose-300 line-through text-xl">R$ 197,00</span>
+                            <span class="bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold">-76% OFF</span>
+                        </div>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="text-center py-8 px-6">
+                        <p class="text-gray-500 text-sm mb-1">Por apenas:</p>
+                        <div class="flex items-baseline justify-center gap-1">
+                            <span class="text-gray-500 text-2xl font-bold">R$</span>
+                            <span class="text-6xl md:text-7xl font-extrabold text-wine-800">47</span>
+                            <span class="text-gray-500 text-lg">,00</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mt-2">Pagamento único via Cartão, Boleto ou PIX.</p>
+
+                        <!-- Payment icons -->
+                        <div class="flex justify-center gap-3 mt-4 text-gray-400">
+                            <i class="fab fa-cc-visa text-2xl"></i>
+                            <i class="fab fa-cc-mastercard text-2xl"></i>
+                            <i class="fab fa-pix text-2xl"></i>
+                            <i class="fas fa-barcode text-2xl"></i>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="px-6 pb-8">
+                        <a href="#" class="btn-cta w-full py-5 rounded-xl text-lg uppercase tracking-wider flex items-center justify-center gap-3">
+                            <i class="fas fa-lock"></i>
+                            Quero meu acesso agora por R$ 47
+                        </a>
+                        <div class="flex items-center justify-center gap-2 mt-4 text-gray-500 text-sm">
+                            <i class="fas fa-shield-halved text-green-500"></i>
+                            <span>Compra 100% segura — Garantia de 7 dias</span>
+                        </div>
+                    </div>
+
+                    <!-- Includes list -->
+                    <div class="bg-gray-50 border-t border-gray-100 px-6 py-6">
+                        <p class="text-sm font-bold text-gray-700 mb-3 uppercase tracking-wider">Incluso no acesso:</p>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-center gap-2 text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500"></i> Aula Especial ao Vivo com Mirna
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500"></i> Videoaulas de Reativação gravadas
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500"></i> Material de Apoio em PDF
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500"></i> Bônus Exclusivo 3S
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FAQ                                          -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-wine-800 mb-4">Perguntas Frequentes</h2>
+                <div class="w-20 h-1 bg-rose-400 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-blush-50 transition-colors">
+                        <span class="font-semibold text-gray-800 text-base md:text-lg pr-4">Funciona para quem está na menopausa ou acima dos 50 anos?</span>
+                        <i class="fas fa-chevron-down faq-chevron text-rose-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="px-6 pb-5 pt-0 text-gray-600 leading-relaxed">
+                            Com certeza. A falta de lubrificação não é apenas hormonal, é física. O método foca em devolver a circulação sanguínea, reativando glândulas que o estresse e o tempo "adormeceram".
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-blush-50 transition-colors">
+                        <span class="font-semibold text-gray-800 text-base md:text-lg pr-4">Isso é algum tipo de pompoarismo comum de internet?</span>
+                        <i class="fas fa-chevron-down faq-chevron text-rose-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="px-6 pb-5 pt-0 text-gray-600 leading-relaxed">
+                            Não. O pompoarismo comum foca apenas em apertar. Nosso método foca primeiro no Relaxamento e na Vascularização, ensinando seu corpo a soltar a tensão para que o sangue volte a fluir.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-blush-50 transition-colors">
+                        <span class="font-semibold text-gray-800 text-base md:text-lg pr-4">Eu já uso lubrificante de farmácia, por que o método é diferente?</span>
+                        <i class="fas fa-chevron-down faq-chevron text-rose-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="px-6 pb-5 pt-0 text-gray-600 leading-relaxed">
+                            O sintético só molha por fora. O programa ensina seu corpo a produzir a própria lubrificação através do estímulo correto dos nervos e glândulas, trazendo o calor de volta.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-blush-50 transition-colors">
+                        <span class="font-semibold text-gray-800 text-base md:text-lg pr-4">Quanto tempo preciso dedicar por dia?</span>
+                        <i class="fas fa-chevron-down faq-chevron text-rose-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="px-6 pb-5 pt-0 text-gray-600 leading-relaxed">
+                            Apenas 15 minutos diários são suficientes para você começar a sentir os resultados nas primeiras semanas de prática consistente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- GARANTIA                                     -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-20 bg-warm-50 border-y border-warm-200">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-14">
+                <!-- Guarantee Seal -->
+                <div class="flex-shrink-0">
+                    <div class="guarantee-seal w-44 h-44 md:w-52 md:h-52 rounded-full flex flex-col items-center justify-center text-center relative floating">
+                        <p class="text-xs font-bold uppercase tracking-wider text-yellow-900 opacity-70">Garantia</p>
+                        <p class="text-5xl md:text-6xl font-extrabold text-yellow-900 leading-none">7</p>
+                        <p class="text-sm font-bold uppercase tracking-wider text-yellow-900">Dias</p>
+                        <p class="text-[10px] font-bold uppercase tracking-wider text-yellow-900 opacity-60 mt-0.5">Sem Chatice</p>
+                    </div>
+                </div>
+
+                <!-- Guarantee text -->
+                <div class="text-center md:text-left">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-wine-800 mb-4">
+                        Minha Garantia "Sem Chatice"
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-4">
+                        Você tem <strong class="text-gray-800">7 dias para testar todo o conteúdo</strong>. Se você me provar que aplicou o método e não teve nenhum resultado, ou se simplesmente não gostar das aulas, eu devolvo 100% do seu investimento.
+                    </p>
+                    <p class="text-gray-700 text-lg font-semibold">
+                        Sem perguntas, sem burocracia. O risco é todo meu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- RECAPITULAÇÃO + CTA FINAL                    -->
+    <!-- ============================================ -->
+    <section class="py-16 md:py-24 hero-gradient text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-rose-400 to-transparent"></div>
+        <div class="absolute -top-32 -right-32 w-96 h-96 bg-rose-500 rounded-full opacity-10 blur-3xl"></div>
+
+        <div class="container mx-auto px-5 md:px-8 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                    Recapitulando sua transformação
+                </h2>
+                <p class="text-rose-100/80 text-lg md:text-xl leading-relaxed mb-6">
+                    Você não está comprando apenas um curso, está investindo na sua volta por cima.
+                </p>
+                <p class="text-rose-100/80 text-lg md:text-xl leading-relaxed mb-10">
+                    Com a orientação da <strong class="text-white">Mirna Lacerda</strong> — premiada como a maior influenciadora do setor — você terá o passo a passo exato para deixar a dor e a secura no passado.
+                </p>
+
+                <a href="#oferta" class="btn-cta inline-flex items-center gap-3 px-10 md:px-16 py-5 md:py-6 rounded-xl text-base md:text-xl uppercase tracking-wider">
+                    <i class="fas fa-bolt"></i>
+                    Sim! Quero destravar meu prazer agora
+                </a>
+
+                <p class="mt-6 text-rose-200/50 text-sm">
+                    <i class="fas fa-shield-halved mr-1"></i> Compra segura — Garantia de 7 dias — Acesso imediato
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer class="py-8 bg-wine-900 text-center border-t border-wine-700">
+        <div class="container mx-auto px-5">
+            <div class="flex flex-wrap items-center justify-center gap-4 mb-4">
+                <a href="https://acesso.vip/privacidade" class="text-rose-200/50 text-sm hover:text-rose-200 transition-colors" target="_blank" rel="noopener noreferrer">
+                    Política de Privacidade
+                </a>
+                <span class="text-rose-200/30">|</span>
+                <a href="#" class="text-rose-200/50 text-sm hover:text-rose-200 transition-colors">
+                    Termos de Uso
+                </a>
+                <span class="text-rose-200/30">|</span>
+                <a href="#" class="text-rose-200/50 text-sm hover:text-rose-200 transition-colors">
+                    Contato
+                </a>
+            </div>
+            <p class="text-rose-200/40 text-sm">
+                &copy; 2025 Mirna Lacerda — Todos os direitos reservados.
+            </p>
+            <p class="text-rose-200/30 text-xs mt-2">
+                Este produto não substitui orientação médica profissional.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- SCRIPTS                                      -->
+    <!-- ============================================ -->
+    <script>
+        function toggleFaq(button) {
+            var content = button.nextElementSibling;
+            var chevron = button.querySelector('.faq-chevron');
+            var isOpen = content.classList.contains('open');
+
+            document.querySelectorAll('.faq-content.open').forEach(function(el) {
+                el.classList.remove('open');
+            });
+            document.querySelectorAll('.faq-chevron.open').forEach(function(el) {
+                el.classList.remove('open');
+            });
+
+            if (!isOpen) {
+                content.classList.add('open');
+                chevron.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>
