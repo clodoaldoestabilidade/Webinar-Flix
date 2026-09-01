@@ -6,6 +6,23 @@
     <title>Desafio Destrave Seu Prazer | Mirna Lacerda</title>
     <meta name="description" content="Reconecte-se com o seu prazer e destrave a lubrificação natural do seu corpo. Desafio ao vivo com Mirna Lacerda por apenas R$ 47.">
 
+    <!-- Meta Pixel -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1313505902379038');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1313505902379038&ev=PageView&noscript=1"
+    /></noscript>
+
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -1316,6 +1333,11 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(dados)
             }).catch(function() {});
+
+            if (typeof fbq === 'function') {
+                fbq('track', 'Lead', { content_name: 'Destrave Seu Prazer' });
+                fbq('track', 'InitiateCheckout', { value: 47.00, currency: 'BRL' });
+            }
 
             var checkoutComDados = CHECKOUT_URL
                 + '?name=' + encodeURIComponent(nome)
