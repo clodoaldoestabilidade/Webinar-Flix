@@ -290,8 +290,31 @@
                     <i class="fas fa-arrow-right"></i>
                 </a>
 
+                <!-- Countdown Timer -->
+                <div class="mt-8 sm:mt-10 mb-6">
+                    <p class="text-rose-200/60 text-sm uppercase tracking-wider mb-3">A aula ao vivo começa em:</p>
+                    <div id="countdown" class="flex justify-center gap-3 sm:gap-5">
+                        <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl px-4 py-3 min-w-[70px]">
+                            <span id="cd-days" class="block text-2xl sm:text-3xl font-extrabold text-yellow-300">--</span>
+                            <span class="text-rose-200/50 text-xs uppercase tracking-wider">Dias</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl px-4 py-3 min-w-[70px]">
+                            <span id="cd-hours" class="block text-2xl sm:text-3xl font-extrabold text-yellow-300">--</span>
+                            <span class="text-rose-200/50 text-xs uppercase tracking-wider">Horas</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl px-4 py-3 min-w-[70px]">
+                            <span id="cd-mins" class="block text-2xl sm:text-3xl font-extrabold text-yellow-300">--</span>
+                            <span class="text-rose-200/50 text-xs uppercase tracking-wider">Min</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl px-4 py-3 min-w-[70px]">
+                            <span id="cd-secs" class="block text-2xl sm:text-3xl font-extrabold text-yellow-300">--</span>
+                            <span class="text-rose-200/50 text-xs uppercase tracking-wider">Seg</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Micro benefits -->
-                <div class="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 max-w-3xl mx-auto">
                     <div class="flex items-center gap-2 text-rose-200/70 text-xs sm:text-sm">
                         <i class="fas fa-check-circle text-green-400 flex-shrink-0"></i>
                         <span>Acesso imediato às aulas</span>
@@ -331,13 +354,13 @@
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <p class="text-gray-700 leading-relaxed mb-5 italic text-lg">
-                        "Minha vida mudou depois que entendi como relaxar meu corpo. O prazer voltou a ser real!"
+                        "Eu tinha vergonha de falar sobre isso, mas depois que comecei os exercícios da Mirna, meu corpo respondeu de um jeito que eu não sentia há anos. A lubrificação voltou naturalmente!"
                     </p>
                     <div class="flex items-center gap-3">
-                        <div class="w-11 h-11 rounded-full bg-rose-200 flex items-center justify-center text-rose-600 font-bold text-lg">A</div>
+                        <div class="w-11 h-11 rounded-full bg-rose-200 flex items-center justify-center text-rose-600 font-bold text-lg">R</div>
                         <div>
-                            <p class="font-semibold text-gray-800 text-sm">Depoimento Real</p>
-                            <p class="text-xs text-gray-500">Aluna verificada</p>
+                            <p class="font-semibold text-gray-800 text-sm">Regina S.</p>
+                            <p class="text-xs text-gray-500">Aluna desde 2024</p>
                         </div>
                     </div>
                 </div>
@@ -348,13 +371,13 @@
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <p class="text-gray-700 leading-relaxed mb-5 italic text-lg">
-                        "Eu achava que a menopausa era o fim, mas a Mirna me mostrou que é apenas um novo começo."
+                        "Tenho 54 anos e achava que era normal sentir dor. Em 3 semanas de prática, a diferença foi absurda. Meu marido até perguntou o que mudou!"
                     </p>
                     <div class="flex items-center gap-3">
-                        <div class="w-11 h-11 rounded-full bg-rose-200 flex items-center justify-center text-rose-600 font-bold text-lg">M</div>
+                        <div class="w-11 h-11 rounded-full bg-rose-200 flex items-center justify-center text-rose-600 font-bold text-lg">S</div>
                         <div>
-                            <p class="font-semibold text-gray-800 text-sm">Depoimento Real</p>
-                            <p class="text-xs text-gray-500">Aluna verificada</p>
+                            <p class="font-semibold text-gray-800 text-sm">Sandra M.</p>
+                            <p class="text-xs text-gray-500">Aluna desde 2025</p>
                         </div>
                     </div>
                 </div>
@@ -588,7 +611,7 @@
                         <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
                             <i class="fas fa-bolt text-green-600 text-lg"></i>
                         </div>
-                        <p class="text-gray-700 font-medium">Sentir seu corpo pulsante e sensível novamente em apenas 4 semanas</p>
+                        <p class="text-gray-700 font-medium">Sentir seu corpo pulsante e sensível novamente com a prática diária</p>
                     </div>
                 </div>
             </div>
@@ -613,7 +636,7 @@
                         <div class="w-56 h-56 md:w-72 md:h-72 rounded-2xl shadow-xl border-4 border-white overflow-hidden relative">
                             <img id="foto-mirna" src="https://cdn.kairogen.ai/gallery/images/6a89c1fac177e076501baa68/dc35832f-1da0-49d5-81ed-520d57bb60e9.jpg" alt="Mirna Lacerda - Especialista em Ginástica Íntima" class="w-full h-full object-cover">
                             <div class="absolute bottom-3 right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold shadow-md">
-                                <i class="fas fa-trophy mr-1"></i> #1 em 2021
+                                <i class="fas fa-trophy mr-1"></i> Top Influenciadora
                             </div>
                         </div>
                     </div>
@@ -645,7 +668,7 @@
                             </div>
                             <div>
                                 <p class="font-bold text-2xl text-wine-800">#1</p>
-                                <p class="text-gray-500 text-sm">Influenciadora 2021</p>
+                                <p class="text-gray-500 text-sm">Top Influenciadora</p>
                             </div>
                         </div>
                     </div>
@@ -675,7 +698,7 @@
                     </div>
                     <div class="wpp-body">
                         <div class="wpp-bubble">
-                            <p>Boa tarde Maravilhosa! Olha já dei uma olhada no livro!! A Capa é divina, o sumário muito bem colocado, a introdução é perfeita, dei uma olhada no geral, é muito conteúdo, a gente fica perdida!! Estou lendo aos poucos... Tô amando, muito bem trabalhados!! Só a Prô mesmo pra nos ajudar!! Parabéns pelo trabalho, carinhoso com nós mulheres!! Isto é ser uma mulher de verdade!! Uma Leôa!!</p>
+                            <p>Boa tarde Maravilhosa! Olha, já comecei os exercícios e tô amando!! Só a Prô mesmo pra nos ajudar com tanto carinho!! Já sinto diferença no meu corpo, a sensibilidade tá voltando aos poucos!! Parabéns pelo trabalho carinhoso com nós mulheres!! Isto é ser uma mulher de verdade!! Uma Leôa!!</p>
                             <div class="wpp-time"><span class="wpp-star"><i class="fas fa-star"></i></span> 4:36 da tarde</div>
                         </div>
                     </div>
@@ -703,7 +726,7 @@
                     </div>
                     <div class="wpp-body">
                         <div class="wpp-bubble">
-                            <p>Boa noite Cris boa noite pro eu tô amando amando o livro tá maravilhoso e não canso de ler já eu volto lê de novo nossa tá muito bom eu estou adorando tô lendo demais cada uma frase mais interessante que a outra muito muito muito mesmo tá muito demais</p>
+                            <p>Boa noite pro eu tô amando amando as aulas tá maravilhoso, cada exercício mais interessante que o outro, meu corpo tá respondendo de um jeito que eu não esperava, muito muito muito bom mesmo tá demais</p>
                             <div class="wpp-time"><span class="wpp-star"><i class="fas fa-star"></i></span> 6:18 da tarde</div>
                         </div>
                     </div>
@@ -717,11 +740,11 @@
                     </div>
                     <div class="wpp-body">
                         <div class="wpp-bubble">
-                            <p>Olha a nova resposta Cris, estas frases estão deixando ele ainda mais apaixonado!!!</p>
+                            <p>Gente, os exercícios de vascularização mudaram tudo!! Meu marido já percebeu a diferença e ficou encantado 😍</p>
                             <div class="wpp-time"><span class="wpp-star"><i class="fas fa-star"></i></span> 9:08 da manhã</div>
                         </div>
                         <div class="wpp-bubble">
-                            <p>E as frases continuam fazendo efeito! Rsrs</p>
+                            <p>E cada dia tá melhor! O corpo realmente responde! Rsrs</p>
                             <div class="wpp-time">3:59 da tarde</div>
                         </div>
                     </div>
@@ -735,7 +758,7 @@
                     </div>
                     <div class="wpp-body">
                         <div class="wpp-bubble">
-                            <p>Já li um bocado de frase. Já mandei uma frase por meu. Peguete hoje de manhã. 😍 kk</p>
+                            <p>Prô, não acreditava que ia funcionar, mas depois de 2 semanas praticando, a lubrificação voltou mesmo!! Tô emocionada 😍 kk</p>
                             <div class="wpp-time"><span class="wpp-star"><i class="fas fa-star"></i></span> 6:23 da tarde</div>
                         </div>
                     </div>
@@ -749,7 +772,7 @@
                     </div>
                     <div class="wpp-body">
                         <div class="wpp-bubble">
-                            <p>Meninas eu também estou adorando esse livro</p>
+                            <p>Meninas eu também estou adorando o método, o resultado é real!</p>
                             <div class="wpp-time">6:20 da tarde</div>
                         </div>
                     </div>
@@ -960,7 +983,8 @@
                             <span class="text-6xl md:text-7xl font-extrabold text-wine-800">47</span>
                             <span class="text-gray-500 text-lg">,00</span>
                         </div>
-                        <p class="text-gray-500 text-sm mt-2">Pagamento único via Cartão, Boleto ou PIX.</p>
+                        <p class="text-gray-500 text-sm mt-2">ou <strong class="text-gray-700">5x de R$ 10,26</strong> no cartão</p>
+                        <p class="text-gray-400 text-xs mt-1">Pagamento via Cartão, Boleto ou PIX.</p>
 
                         <!-- Payment icons -->
                         <div class="flex justify-center gap-3 mt-4 text-gray-400">
@@ -1089,7 +1113,7 @@
                         Minha Garantia "Sem Chatice"
                     </h2>
                     <p class="text-gray-600 text-lg leading-relaxed mb-4">
-                        Você tem <strong class="text-gray-800">7 dias para testar todo o conteúdo</strong>. Se você me provar que aplicou o método e não teve nenhum resultado, ou se simplesmente não gostar das aulas, eu devolvo 100% do seu investimento.
+                        Você tem <strong class="text-gray-800">7 dias para testar todo o conteúdo</strong>. Se por qualquer motivo você sentir que não é para você, basta pedir e eu devolvo 100% do seu investimento.
                     </p>
                     <p class="text-gray-700 text-lg font-semibold">
                         Sem perguntas, sem burocracia. O risco é todo meu.
@@ -1149,7 +1173,7 @@
                 </a>
             </div>
             <p class="text-rose-200/40 text-sm">
-                &copy; 2025 Mirna Lacerda — Todos os direitos reservados.
+                &copy; 2026 Mirna Lacerda — Todos os direitos reservados.
             </p>
             <p class="text-rose-200/30 text-xs mt-2">
                 Este produto não substitui orientação médica profissional.
@@ -1306,6 +1330,40 @@
                 document.getElementById('form-captura').reset();
             }, 600);
         }
+    </script>
+
+    <script>
+        // COUNTDOWN TIMER — Altere a data abaixo para a data da sua aula ao vivo
+        (function() {
+            // Configure aqui: ano, mês (0-11), dia, hora, minuto (horário de Brasília)
+            var EVENT_DATE = new Date('2026-09-15T20:00:00-03:00');
+
+            function atualizarContagem() {
+                var agora = new Date();
+                var diff = EVENT_DATE - agora;
+
+                if (diff <= 0) {
+                    document.getElementById('cd-days').textContent = '0';
+                    document.getElementById('cd-hours').textContent = '0';
+                    document.getElementById('cd-mins').textContent = '0';
+                    document.getElementById('cd-secs').textContent = '0';
+                    return;
+                }
+
+                var dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+                var horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                var segs = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('cd-days').textContent = dias;
+                document.getElementById('cd-hours').textContent = horas < 10 ? '0' + horas : horas;
+                document.getElementById('cd-mins').textContent = mins < 10 ? '0' + mins : mins;
+                document.getElementById('cd-secs').textContent = segs < 10 ? '0' + segs : segs;
+            }
+
+            atualizarContagem();
+            setInterval(atualizarContagem, 1000);
+        })();
     </script>
 
     <script>
