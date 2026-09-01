@@ -1334,10 +1334,30 @@
                 body: JSON.stringify(dados)
             }).catch(function() {});
 
+            var leadEventId = 'lead_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+            var checkoutEventId = 'checkout_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+
             if (typeof fbq === 'function') {
-                fbq('track', 'Lead', { content_name: 'Destrave Seu Prazer' });
-                fbq('track', 'InitiateCheckout', { value: 47.00, currency: 'BRL' });
+                fbq('track', 'Lead', { content_name: 'Destrave Seu Prazer' }, { eventID: leadEventId });
+                fbq('track', 'InitiateCheckout', { value: 47.00, currency: 'BRL' }, { eventID: checkoutEventId });
             }
+
+            var fbp = (document.cookie.match(/(?:^|;\s*)_fbp=([^;]*)/) || [])[1] || '';
+            var fbc = (document.cookie.match(/(?:^|;\s*)_fbc=([^;]*)/) || [])[1] || '';
+
+            var capiBase = { email: email, phone: telefoneNumeros, name: nome, source_url: window.location.href, fbp: fbp, fbc: fbc };
+
+            fetch('/api/meta-capi', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(Object.assign({}, capiBase, { event_name: 'Lead', event_id: leadEventId }))
+            }).catch(function() {});
+
+            fetch('/api/meta-capi', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(Object.assign({}, capiBase, { event_name: 'InitiateCheckout', event_id: checkoutEventId, value: 47.00, currency: 'BRL' }))
+            }).catch(function() {});
 
             var checkoutComDados = CHECKOUT_URL
                 + '?name=' + encodeURIComponent(nome)
